@@ -1109,6 +1109,13 @@ var EasyAutocomplete = (function (scope) {
 
 								var listData = listBuilders[builderIndex].data;
 
+								// https://stackoverflow.com/a/72597733/8800423
+								if ( listData === null || listData === undefined || listData === '' ||
+									(Array.isArray(listData) && listData.length === 0) |
+									(!(listData instanceof Date) && typeof listData === 'object' && Object.keys(listData).length === 0) ) {
+									continue;									
+								} 
+
 								if (listData.length === 0) {
 									continue;
 								}
