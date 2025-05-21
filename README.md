@@ -1,78 +1,99 @@
-# <a href='http://easyautocomplete.com' >EasyAutocomplete - plugin for jQuery</a>
-Jquery autocomplete plugin
+# 🎯 EasyAutocomplete — Powerful & Flexible jQuery Autocomplete Plugin
 
+[![Demo Preview](path-to-demo-image/EasyAutocomplete.gif)](https://link-to-live-demo.com)
 
-![demo](------images/EasyAutocomplete.gif)
+**EasyAutocomplete** è un potente plugin jQuery per l'autocompletamento che permette di arricchire facilmente i tuoi campi di input con suggerimenti dinamici.
 
+---
 
-**EasyAutocomplete** is a highly configurable jquery autocomplete plugin:
- * It supports local and remote data sets (JSON, XML and plain text),
- * Uses **ajax** method calls,
- * Allows to search, sort and match the response phrase,
- * It lets you use a couple of different list templates and even offers you possibility to create your own list <a href="------guide#sec-templates">template</a>,
- * As one of the best **jquery autocomplete** plugins, EasyAutocomplete supports callback handles, so it can be configured to run functions on specific <a href="------guide#sec-trigger-event">events</a>,
- * It has a couple of interesting, clean, modern build in css styles (no images requirement).
+## 🚀 Caratteristiche principali
 
+- 🔌 Supporto per sorgenti **locali** o **remote** (JSON, XML, testo semplice)
+- ⚙️ Chiamate AJAX automatiche
+- 🔍 Ricerca, ordinamento e matching avanzati delle stringhe
+- 🧩 Template **personalizzabili** per la lista dei risultati
+- 🔁 Gestione eventi tramite **callback** flessibili
+- 🎨 Stili CSS **moderni** inclusi (senza immagini!)
 
-If you are interested in using this jQuery autocomplete plugin on your site, you can find out more details in the
-<a href="------">EasyAutocomplete - jQuery autocomplete - homepage</a>. You can find there <a href='------guide' >full documentation and easy guide</a> on how to use EasyAutocomplete plugin.
+> 👉 Consulta la [Guida Completa](#) e la [Documentazione](#) per una panoramica approfondita.
 
-## Quick example
+---
 
-Javascript:
-```Javascript
+## ⚡ Esempio Rapido
+
+### 🔸 HTML
+
+```html
+<input id="countries" placeholder="Cerca un paese...">
+```
+
+### 🔸 JavaScript
+
+```javascript
 var options = {
-
-  url: "location_to_file.json",
-
+  url: "data/countries.json",
   getValue: "name"
 };
 
 $("#countries").easyAutocomplete(options);
 ```
 
-JSON:
-```JSON
+### 🔸 JSON (esempio)
+
+```json
 [
-  {"name": "Afghanistan", "code": "AF"},
-  {"name": "Aland Islands", "code": "AX"},
-  {"name": "Albania", "code": "AL"},
-  {"name": "Algeria", "code": "DZ"},
-  {"name": "American Samoa", "code": "AS"}
- ]
+  { "name": "Afghanistan", "code": "AF" },
+  { "name": "Albania", "code": "AL" },
+  { "name": "Algeria", "code": "DZ" },
+  { "name": "Andorra", "code": "AD" }
+]
 ```
 
-HTML:
-```HTML
-<input id="countries"/>
-```
+---
 
-## Demo
+## 🧪 Demo
 
-There are a couple of examples in folder: `demo`.
+Esempi pratici sono disponibili nella cartella [`/demo`](./demo).  
+Oppure visita la [Live Demo](#).
 
-## Build
+---
 
-To build project(javascript and css) run:
+## 📁 Struttura del progetto
 
-```
+| Cartella     | Contenuto                                      |
+|--------------|------------------------------------------------|
+| `/dist`      | File pronti all'uso (JS/CSS compilati)         |
+| `/src`       | Codice sorgente                                |
+| `/demo`      | Esempi d’uso                                   |
+| `/test`      | Test unitari                                   |
+
+---
+
+## 🔧 Build e Test
+
+### Per compilare il progetto:
+
+```bash
 grunt build
 ```
 
-## File location:
+### Per eseguire tutti i test:
 
-* Distribution files Javascript, CSS are in `dist` folder,
-* Source files are in the folder `src`,
-* Simple examples, that presents usage of plugin can be found in folder `demo`,
-* Tests for the plugin are located in folder `test`.
-
-## Run tests
-To execute all unit tests, use:
-
-```
+```bash
 grunt test
 ```
 
-## License:
+---
 
-Code released under <a href='http://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt' >the MIT license</a>.
+## 📃 Licenza
+
+Distribuito sotto licenza [MIT](https://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt).
+
+---
+
+## 🔗 Link Utili
+
+- 🌐 [Homepage del progetto](#)
+- 📘 [Documentazione completa](#)
+- 🛠️ [Guida all’uso](#)
+- 🧪 [Demo interattive](#)
